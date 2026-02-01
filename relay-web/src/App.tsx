@@ -15,7 +15,7 @@ function App() {
     return <Dashboard />;
   }
 
-  const whatsappNumber = '+14155238886'; // Replace with your actual Relay WhatsApp number
+  const whatsappNumber = '+447518521888';
   const whatsappMessage = encodeURIComponent('Hey Relay!');
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 

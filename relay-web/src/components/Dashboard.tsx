@@ -39,7 +39,7 @@ export default function Dashboard() {
   const [newWallet, setNewWallet] = useState<{ address: string; seedPhrase: string } | null>(null);
   const [seedPhraseSaved, setSeedPhraseSaved] = useState(false);
 
-  const whatsappNumber = '+14155238886';
+  const whatsappNumber = '+447518521888';
   const whatsappMessage = encodeURIComponent('Hey Relay! I just signed up');
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
