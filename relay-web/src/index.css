@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* White background theme */
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f8fafc;
+  --color-bg-tertiary: #f1f5f9;
+
+  /* Black text */
+  --color-text: #0a0a0a;
+  --color-text-secondary: #404040;
+  --color-text-muted: #737373;
+
+  /* Blue accent */
+  --color-blue: #2563eb;
+  --color-blue-light: #3b82f6;
+  --color-blue-dark: #1d4ed8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: rgba(37, 99, 235, 0.2);
+}
+
+/* Blue gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0a0a0a 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Clean border card */
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+}
+
+.card:hover {
+  border-color: #2563eb;
+  box-shadow: 0 4px 20px -5px rgba(37, 99, 235, 0.15);
+}
+
+/* Glow effects */
+.glow-effect {
+  box-shadow: 0 0 60px -15px rgba(37, 99, 235, 0.3);
+}
+
+.hero-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+/* Card hover */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat bubbles */
+.chat-bubble {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.chat-bubble-user {
+  background: #2563eb;
+  border: none;
+  color: white;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Button styles */
+.btn-primary {
+  background: #0a0a0a;
+  color: white;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #262626;
+}
+
+.btn-secondary {
+  background: white;
+  color: #0a0a0a;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: #0a0a0a;
+}
+
+.btn-blue {
+  background: #2563eb;
+  color: white;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-blue:hover {
+  background: #1d4ed8;
+}

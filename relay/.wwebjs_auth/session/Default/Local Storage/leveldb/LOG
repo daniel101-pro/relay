@@ -1,0 +1,6 @@
+2026/02/01-11:35:00.810 37b62e Reusing MANIFEST /Users/admin/Documents/bridge/relay/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
+2026/02/01-11:35:00.812 37b62e Recovering log #9
+2026/02/01-11:35:00.812 37b62e Reusing old log /Users/admin/Documents/bridge/relay/.wwebjs_auth/session/Default/Local Storage/leveldb/000009.log 
+2026/02/01-11:36:00.821 37b631 Level-0 table #13: started
+2026/02/01-11:36:00.825 37b631 Level-0 table #13: 17972 bytes OK
+2026/02/01-11:36:00.827 37b631 Delete type=0 #9

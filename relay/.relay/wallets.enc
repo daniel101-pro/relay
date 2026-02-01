@@ -1,0 +1,14 @@
+{
+  "wallets": [
+    {
+      "address": "0xFcBd037b7471F72C9d588B0137A77e6d5fC843Ef",
+      "encryptedKey": "780503e6439a84b233f3514925ad117ef229e4bd4bb0ade7b22fd6aa3c158553f005e12dfd3bdc7010c6675014275a51650843d9bf7045fad76cab1e8491c6618cb2d5e9d8c51f93f3ae18e24522051a",
+      "iv": "f031ac85cfe3668327667a18f0d38977",
+      "name": "Wallet ML3M9M5S",
+      "createdAt": "2026-02-01T10:47:17.874Z",
+      "network": "ethereum",
+      "isDefault": true
+    }
+  ],
+  "version": 1
+}
